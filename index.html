@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decay Simulator</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+</head>
+<body>
+    <h1>Decay Simulator</h1>
+    <div id="board"></div>
+    <div id="tally">
+        <table>
+            <tr>
+                <th>Counter</th>
+                <th>Count</th>
+            </tr>
+            <tr>
+                <td>Red</td>
+                <td id="red_count">0</td>
+            </tr>
+            <tr>
+                <td>Blue</td>
+                <td id="blue_count">0</td>
+            </tr>
+        </table>
+    </div>
+    <div id="plot"></div>
+    <button id="actionButton" onclick="pluckCounters()">Pluck Counters</button>
+    <button onclick="resetBoard()">Reset Board</button>
+</body>
+</html>
